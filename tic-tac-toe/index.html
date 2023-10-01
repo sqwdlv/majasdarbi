@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p id="rules">
+      Krustiņi un nulītes ir vienkārša spēle kuru spēlē 2 cilvēki. Spēlētāju
+      mērķis ir būt pirmajam kurš uzzīmē trīs krustiņus vai apļus vienā rindā
+      vai kolonnā vai diagonālā līnijā no viena stūra līdz otram stūrim.
+    </p>
+    <div id="game-board"></div>
+    <p id="info"></p>
+
+    <div class="buttons">
+      <button id="reset-button">Sākt jaunu spēli</button>
+      <button id="reset-score-button">Atjaunināt rezultātu!</button>
+    </div>
+
+    <div id="score-board">
+      <div id="aplis-score">0</div>
+      <div id="krusts-score">0</div>
+    </div>
+
+    <div id="score-virs">
+      <div id="apliso">APLIS</div>
+      <div id="krustsx">KRUSTS</div>
+    </div>
+
+    <div id="score-virs-virs">
+      <div id="result">REZULTĀTS</div>
+    </div>
+
+    <div id="quote-display"></div>
+    <div class="btn-qoute"><button id="new-quote">Jauna atziņa</button></div>
+    <script src="game.js"></script>
+  </body>
+</html>
