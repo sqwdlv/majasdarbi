@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(255, 255, 0, 0.2);
+}
+#rules {
+  width: 700px;
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#game-board {
+  width: 300px;
+  height: 300px;
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 15px rgba(255, 106, 125, 1);
+  border-radius: 15px;
+}
+
+#info {
+  margin-top: 15px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 106, 125, 0.5);
+  border: solid 2px #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.square:hover {
+  background-color: rgba(255, 106, 125, 1);
+}
+
+.aplis {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 10px solid red;
+  box-sizing: border-box;
+}
+
+.krusts {
+  height: 90px;
+  width: 90px;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.krusts:before,
+.krusts:after {
+  content: "";
+  position: absolute;
+  background-color: blue;
+}
+
+.krusts:before {
+  left: 50%;
+  width: 30%;
+  margin-left: -15%;
+  height: 100%;
+}
+
+.krusts:after {
+  top: 50%;
+  height: 30%;
+  margin-top: -15%;
+  width: 100%;
+}
+
+#reset-button,
+#reset-score-button {
+  margin-top: 50px;
+  margin-left: 10px;
+  border: 2px rgba(255, 106, 125, 1) solid;
+  font-size: 32px;
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#score-board {
+  position: absolute;
+  left: 250px;
+  top: 30%;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
+
+#score-board #aplis-score,
+#krusts-score {
+  font-weight: 700;
+  margin-right: 50px;
+  text-transform: uppercase;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+}
+
+#score-virs {
+  position: absolute;
+  left: 250px;
+  top: 27%;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
+
+#score-virs #apliso,
+#krustsx {
+  font-weight: 700;
+  margin-right: 50px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  font-size: 26px;
+}
+
+#score-virs #apliso {
+  color: red;
+}
+
+#krustsx {
+  color: blue;
+}
+
+#score-virs-virs {
+  position: absolute;
+  left: 250px;
+  top: 22%;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
+
+#score-virs-virs #result {
+  font-weight: 700;
+  margin-right: 50px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 32px;
+}
+
+#quote-display {
+  position: absolute;
+  right: 200px;
+  top: 15%;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  border: 2px #000 solid;
+  padding: 3px;
+  border-radius: 5px;
+  width: 300px;
+  height: auto;
+  text-align: justify;
+  font-weight: 700;
+}
+
+.btn-qoute {
+  position: absolute;
+  right: 60px;
+  top: 14%;
+}
+
+#new-quote {
+  margin-top: 50px;
+  margin-left: 10px;
+  border: 2px rgba(255, 106, 125, 1) solid;
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
